@@ -1,0 +1,302 @@
+/* general CSS */
+
+body {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+    background: #fff;
+    color: #000;
+    overflow-x: hidden;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+
+}
+
+/* links */
+
+a {
+    text-decoration: none !important;
+    color: #999;
+    transition: all 0.5s ease-in-out;
+}
+
+a:hover {
+    color: #ff735c !important;
+}
+
+/* navbar */
+
+.navbar {
+    position: relative;
+}
+
+.navbar-collapse {
+    text-align: center;
+}
+
+.navbar-light .navbar-toggler:focus {
+    color: #000;
+    box-shadow: 0 0 0 2px;
+}
+
+.navbar .navbar-brand {
+    padding-left: 2.0rem;
+}
+
+.navbar ul li {
+    position: relative;
+    padding-right: 2.0rem;
+    margin-left: 2.5rem;
+    margin-right: 1rem;
+}
+
+.navbar ul li a {
+    position: relative;
+    display: block;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 14px;
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
+    color: #999;
+}
+
+/* banner content */
+
+.banner-section {
+    position: relative;
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+}
+
+.banner-title {
+    position: relative;
+    margin: 0;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    font-family: "Poppins", "sans-serif";
+    font-size: 40px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #000;
+}
+
+.banner-section .banner-desc {
+    position: relative;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.banner-section .banner-btn {
+    position: relative;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #a5a7a7;
+}
+
+/* about content */
+
+.about-section {
+    position: relative;
+    padding-bottom: 3rem;
+}
+
+.about-section .container {
+    padding-bottom: 2rem;
+}
+
+.about-section .about-title {
+    position: relative;
+    margin: 0;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    font-family: "Poppins", sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    color: #000;
+}
+
+.about-section .about-desc {
+    position: relative;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+/* interviews about */
+
+.interviews-heading .text-center {
+    padding-left: 200px;
+    padding-right: 200px;
+    text-align: center;
+}
+
+/* interviews heading */
+
+.interviews-heading {
+    position: relative;
+    padding-bottom: 1rem;
+}
+
+.interviews-heading .interviews-headline {
+    position: relative;
+    font-family: "Poppins", sans-serif;
+    font-size: 35px; 
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    color: #000;
+}
+
+.interviews-heading .interviews-desc {
+    position: relative;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+#product {
+    padding: 3rem 0;
+}
+
+.controls {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.control {
+    display: inline-block;
+    padding: 1rem 2.0rem;
+    margin: 1rem 0.5rem;
+    border: none;
+    outline: none;
+    border-radius: 2.5rem;
+    font-weight: 600;
+    color: white;
+    background: #ff735c;
+    cursor: pointer;
+}
+
+.control2 {
+    display: inline-block;
+    padding: 1rem 2.0rem;
+    margin: 1rem 0.5rem;
+    border: none;
+    outline: none;
+    border-radius: 2.5rem;
+    font-weight: 600;
+    color: white;
+    background: #000000;
+    cursor: pointer;
+}
+
+.control.mixitup-control-active {
+    background: #e84127;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.response-btn {
+    margin: 15px;
+}
+
+.response1-btn {
+    width: 350px;
+    text-align: left;
+    background: #222;
+    color: #fff;
+    border-radius: 4px;
+    padding: 12px;
+}
+
+.response2-btn {
+    width: 350px;
+    text-align: left;
+    background: #e84127;
+    color: #fff;
+    border-radius: 4px;
+    padding: 12px;
+}
+
+.mix {
+    max-width: 50rem;
+}
+
+/* interviews content */
+
+.popup .overlay {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+    display: none;
+}
+
+.popup .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    background: #fff;
+    width: 750px;
+    height: 75%;
+    z-index: 2;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.popup .close-btn {
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 30px;
+    height: 30px;
+    background: #222;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.popup.active .overlay {
+    display: block;
+}
+
+.popup.active .content {
+    transition: all 300ms ease-in-out;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+/* footer */
+
+.footer {
+    width: 100%;
+    color: #000000;
+    font-weight: 300;
+    background: #f7f7f7;
+    text-align: center;
+    padding: 25px 0;
+    margin-top: 20px;
+}
